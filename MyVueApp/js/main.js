@@ -10,6 +10,12 @@
                 'task2',
                 'task3'            
             ]
+        },
+        methods: {
+            addItem: function(){
+                this.todos.push(this.newItem);
+                this.newItem = '';
+            }
         }
     })
 
