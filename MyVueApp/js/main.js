@@ -16,7 +16,7 @@
                 },
                 {
                     title: "task3",
-                    isDone: false
+                    isDone: true
                 },
             ]
         },
