@@ -6,9 +6,18 @@
         el: '#app',
         data: {
             todos: [
-                'task1',
-                'task2',
-                'task3'            
+                {
+                    title: "task1",
+                    isDone: false
+                },
+                {
+                    title: "task2",
+                    isDone: false
+                },
+                {
+                    title: "task3",
+                    isDone: false
+                },
             ]
         },
         methods: {
