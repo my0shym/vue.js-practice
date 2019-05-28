@@ -34,14 +34,19 @@
                 if (confirm('are you sure?')){
                     this.todos.splice(index, 1);
                 }
-            }
+            },
+            purge: function(){
+                if (!confirm('delete finished?')){
+                    reutrn;
+                }
+                this.todos = this.remainging;
+            },
         },
         computed: {
             remainging: function(){
-                var items = this.todos.filter(function(todo){
+                return this.todos.filter(function(todo){
                     return !todo.isDone;
                 });
-                return items.length;
             }
         }
     });
